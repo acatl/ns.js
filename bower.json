@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": [
     "ns.js",
-    "ns.min.js",
+    "ns.min.js"
   ],
   "ignore": [
     ".gitignore",
