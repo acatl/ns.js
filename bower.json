@@ -1,6 +1,7 @@
 {
   "name": "ns.js",
   "version": "0.1.0",
+  "description": "simple javascript namespaceing",
   "main": "ns.min.js",
   "ignore": [
     "**/.*",

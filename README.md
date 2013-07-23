@@ -1,8 +1,8 @@
 # ns.js 
-> "simple javascript namespacing"
 
-By default any namespace will be attached to the window object, to overrride this
-plase read **'obscure namepsace'**
+simple javascript namespacing
+
+## examples
 
 Create a namespace and its object:
 
