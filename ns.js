@@ -1,10 +1,18 @@
 (function() {
   var ns;
 
-  ns = function(path, source) {
-    var nsPath, obj;
+  ns = function() {
+    var globalDeclared, nsPath, obj, path, source, useGlobal;
+    globalDeclared = typeof arguments[0] === "boolean" || typeof arguments[0] === "object";
+    useGlobal = !globalDeclared || arguments[0] === false;
+    path = !globalDeclared && arguments[0] || arguments[1];
+    source = !globalDeclared && arguments[1] || arguments[2];
+    if (useGlobal) {
+      obj = window;
+    } else {
+      obj = typeof arguments[0] === "object" && arguments[0] || (window.___ = window.___ || {});
+    }
     path = path.split(/[\[\]\.]+/);
-    obj = window;
     if (path[path.length - 1] === "") {
       path.pop();
     }
