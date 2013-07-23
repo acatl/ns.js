@@ -1,15 +1,12 @@
 {
   "name": "ns.js",
   "version": "0.0.1",
-  "main": [
-    "ns.js",
-    "ns.min.js"
-  ],
+  "main": "ns.min.js",
   "ignore": [
-    ".gitignore",
-    "**/*.coffee",
-    "package.json",
-    "Gruntfile.js",
-    "tests/**"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ]
 }
